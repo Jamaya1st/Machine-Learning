@@ -55,12 +55,12 @@
 									Predictive Fare Model</a></h2>
 									<p>Have you ever wonder what is cheaper when looking for a ride?<br />
 									I'm sure you pull out your phone and check between Lyft and Uber assuming your taxi trip will be too much.<br />
-									I have trained an application to check cost rather than taking a chance on a cab on at high peaks of the day <br />
-									With this application you can input date, time, and distance to get a hig probable price with an error of a $1 <br />	
-									Below I will talk about the development of the model.</p>
+									I have trained an application to check cost rather than taking a chance on a cab on high peaks of the day. <br />
+									With this application you can input date, time, and distance to get a hig probable price with an error of a $1. <br />	
+									Below I will talk about the development of the model and it's current accuracy of 70%.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								<a href="#" class="image main"><img src="images/waldemar-brandt-kYbYIWdJRh0-unsplash.jpg" alt="" /></a>
+								<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
 								<ul class="actions special">
 									<!-- <li><a href="#" class="button large">Full Story</a></li> -->
 								</ul>
@@ -71,11 +71,18 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
+										<h2><a href="#">Data<br />
+										Pre-Processing</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/mika-baumeister-Wpnoqo2plFA-unsplash.jpg" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul>
+										<li>Original data contains 56 million rows!!!</li>
+										<li>Data too big to save models.</li>
+										<li>Parse Date and Time.</li>
+										<li>Geographical Cordinates?</li>
+										<li>Haversine Formula.</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -83,11 +90,17 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 22, 2017</span> -->
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
+										<h2><a href="#">Exploratory<br />
+										Data Analysis</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/Corr.PNG" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul>
+										<li>Correlation.</li>
+										<li>Passenger Seats.</li>
+										<li>Outliers.</li>
+										<li>Missing Data?</li>
+									</ul>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -95,11 +108,16 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 18, 2017</span> -->
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
+										<h2><a href="#">Fare<br />
+										Outliers</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/Fare_amount_range_per_month.PNG" width="550" height="400" alt="" />
+									<ul>
+										<li>Fare Cost Ranging: $2-$500.</li>
+										<li>Majority of Fare ranges: $2-$20.</li>
+									</ul>
+									<a href="#" class="image fit"><img src="images/fare_amountCount.PNG" width="500" height="250" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -107,11 +125,17 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 14, 2017</span> -->
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
+										<h2><a href="#">Fare<br />
+										Outliers Removed</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/Fare_amount_range_per_month_1.PNG" alt="" /></a>
+									<ul>
+										<li>4% of data filtered out wiht outlier removal.</li>
+										<li>Improved Gradient Booster Models from 40% to 60%</li>
+										<li>Improved Regression Models from 1% to 40%</li>
+									</ul>
+									<a href="#" class="image fit"><img src="images/Fare_amountCount_1.PNG" width="600" height="200" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -119,11 +143,15 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 11, 2017</span> -->
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
+										<h2><a href="#">Distance<br />
+										Outliers</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/distance_per_hour.PNG" alt="" /></a>
+									<ul>
+										<li>Some Distances as high as 1,200 miles of travel.</li>
+										<li>Mahority of cab dropoffs were within 4 miles of pickup.</li>
+									</ul>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
@@ -131,11 +159,88 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 7, 2017</span> -->
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
+										<h2><a href="#">Distance<br />
+										Outliers Removal</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="#" class="image fit"><img src="images/Distance_outlier_Removal.PNG" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul>
+										<li>1.5% of data filtered out wiht outlier removal.</li>
+										<li>Improved Gradient Booster Models from 60% to almost 70%.</li>
+										<li>Improved Regression Models from 40% to almost 67%.</li>
+									</ul>
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 11, 2017</span> -->
+										<h2><a href="#">Train Split<br />
+										Scaling</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/train_split.PNG" alt="" /></a>
+									<ul>
+										<li>67% data used for training.</li>
+										<li>33% of data used for testing.</li>
+										<li>Scaling?</li>
+									</ul>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 7, 2017</span> -->
+										<h2><a href="#">Models</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/andrea-de-santis-zwd435-ewb4-unsplash.jpg" width="550" height="500" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul>
+										<li>1 Random Forest.</li>
+										<li>3 Gradient Bossters.</li>
+										<li>3 Linear Regressors.</li>
+										<li>Mean Absolute Error: MAE.</li>
+										<li>Root Mean Square Error: RMSE.</li>
+										<li>Accuracy.</li>
+									</ul>
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 11, 2017</span> -->
+										<h2><a href="#">Gradient<br />
+										Boosters</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/residuals_GB_XGB.PNG" alt="" /></a>
+									<ul>
+										<li>Train and testing accuracy 68% ~ 70%.</li>
+										<li>MAE ~ $1.20 and RMSE ~ $1.60.</li>
+										<li>Training time?</li>
+									</ul>
+									<a href="#" class="image fit"><img src="images/residuals_GB_LGB.PNG" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul class="actions special">
+										<!-- <li><a href="#" class="button">Full Story</a></li> -->
+									</ul>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 7, 2017</span> -->
+										<h2><a href="#">Linear<br />
+										Regression</a></h2>
+									</header>
+									<a href="#" class="image fit"><img src="images/Residuals_Ridge.PNG" alt="" /></a>
+									<!-- <p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p> -->
+									<ul>
+										<li>Train and testing accuracy 64% ~ 67%, except for Lasso at accuracy of 50%.</li>
+										<li>MAE ~ $1.20 and RMSE ~ $1.60, except for Lasso at MAE ~ $1.60 and RMSE ~ $2.05.</li>
+										<li>Training time?</li>
+									</ul>
+									<a href="#" class="image fit"><img src="images/residuals_lasso.PNG" alt="" /></a>
 									<ul class="actions special">
 										<!-- <li><a href="#" class="button">Full Story</a></li> -->
 									</ul>
